@@ -3,6 +3,7 @@ from bs4 import BeautifulSoup
 import time
 import webbrowser  # Import the webbrowser module
 import re
+from playsound import playsound
 
 # Function to check the webpage
 def check_ticket_status():
@@ -63,6 +64,10 @@ def check_ticket_status():
 
                         # call and open the web browser
                         webbrowser.open_new_tab(url)
+
+                        # ring the alarm
+                        playsound('alarm.wav')
+
                         return True
                         break
                     else:
