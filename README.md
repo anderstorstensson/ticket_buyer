@@ -1,3 +1,19 @@
+# prerequisite 
+
+make a virtual environment 
+
+```
+virtualenv test
+test\script\activate
+```
+
+and then install the requirements 
+
+```
+pip install beautifulsoup4
+```
+
+
 # functions :
 
 1- ```main_clicker.py```
@@ -6,3 +22,11 @@ This is a better version since it clicks on the available ticket and open the br
 2- ``` main.py ```
 
 This will see when the ticket is available and open the page for you so you can choose it yourself.
+
+
+# How to use:
+```
+python.exe main_clicker.py
+```
+
+
