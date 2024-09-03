@@ -57,9 +57,11 @@ def check_ticket_status():
                             href = match.group(1)
                         else:
                             href = ""
-
+                        # make it html compatible so it can book the ticket with no issue
+                        href = href.replace('amp;','')
                         url = f"https://secure.onreg.com/onreg2/bibexchange/{href}"
 
+                        # call and open the web browser
                         webbrowser.open_new_tab(url)
                         return True
                         break
