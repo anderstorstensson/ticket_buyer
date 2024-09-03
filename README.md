@@ -11,6 +11,8 @@ and then install the requirements
 
 ```
 pip install beautifulsoup4
+pip install playsound
+
 ```
 
 
