@@ -7,7 +7,7 @@ from playsound import playsound
 
 # Function to check the webpage
 def check_ticket_status():
-    url = "https://secure.onreg.com/onreg2/bibexchange/?eventid=6277&language=us"
+    url = "https://secure.onreg.com/onreg2/_bibexchange_/?eventid=6736&language=us" # 2025
     response = requests.get(url,verify=False)
 
     # If request is successful
@@ -60,7 +60,7 @@ def check_ticket_status():
                             href = ""
 
                         href = href.replace('amp;','')
-                        url = f"https://secure.onreg.com/onreg2/bibexchange/{href}"
+                        url = f"https://secure.onreg.com/onreg2/_bibexchange_/{href}" # 2025
 
 
                         webbrowser.open_new_tab(url)
